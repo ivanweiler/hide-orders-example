@@ -5,11 +5,9 @@
         <Favicode_QuadPayHideOrders>
             <active>true</active>
             <codePool>local</codePool>
-            <!--
             <depends>
                 <MR_QuadPay/>
             </depends>
-            -->
         </Favicode_QuadPayHideOrders>
     </modules>
 </config>

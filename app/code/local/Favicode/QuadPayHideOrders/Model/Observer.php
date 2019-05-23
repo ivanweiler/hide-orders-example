@@ -22,7 +22,7 @@ class Favicode_QuadPayHideOrders_Model_Observer
         $orderCollection = Mage::getResourceModel('sales/order_grid_collection');
 
         $orderCollection
-            ->addFieldToFilter('status', 'pending_quadpay') //MR_QuadPay_Model_Method_Quadpay::ORDER_STATUS_PENDING_QUADPAY
+            ->addFieldToFilter('status', MR_QuadPay_Model_Method_Quadpay::ORDER_STATUS_PENDING_QUADPAY)
             ->addFieldToFilter('created_at', array(
                 'lt' =>  new Zend_Db_Expr("DATE_ADD('".now()."', INTERVAL -'90:00' HOUR_MINUTE)")))
             ->getSelect()
