@@ -7,11 +7,6 @@
     </modules>
 
     <global>
-        <models>
-            <favicode_quadpayhideorders>
-                <class>Favicode_QuadPayHideOrders_Model</class>
-            </favicode_quadpayhideorders>
-        </models>
         <blocks>
             <adminhtml>
                 <rewrite>
@@ -20,16 +15,5 @@
             </adminhtml>
         </blocks>
     </global>
-
-    <!-- Uncomment to enable auto-canceling QuadPay orders
-    <crontab>
-        <jobs>
-            <quadpay_cancel_orders>
-                <schedule><cron_expr>*/5 * * * *</cron_expr></schedule>
-                <run><model>favicode_quadpayhideorders/observer::cancelPendingOrders</model></run>
-            </quadpay_cancel_orders>
-        </jobs>
-    </crontab>
-    -->
 
 </config>
