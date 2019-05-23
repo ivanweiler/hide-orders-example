@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Favicode_QuadPayHideOrders>
+            <active>true</active>
+            <codePool>local</codePool>
+            <!--
+            <depends>
+                <MR_QuadPay/>
+            </depends>
+            -->
+        </Favicode_QuadPayHideOrders>
+    </modules>
+</config>

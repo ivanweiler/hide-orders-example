@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Favicode_QuadPayHideOrders>
+            <version>1.0.0</version>
+        </Favicode_QuadPayHideOrders>
+    </modules>
+
+    <global>
+        <models>
+            <favicode_quadpayhideorders>
+                <class>Favicode_QuadPayHideOrders_Model</class>
+            </favicode_quadpayhideorders>
+        </models>
+        <blocks>
+            <adminhtml>
+                <rewrite>
+                    <sales_order_grid>Favicode_QuadPayHideOrders_Block_Adminhtml_Sales_Order_Grid</sales_order_grid>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+    </global>
+
+    <!-- Uncomment to enable auto-canceling QuadPay orders
+    <crontab>
+        <jobs>
+            <quadpay_cancel_orders>
+                <schedule><cron_expr>*/5 * * * *</cron_expr></schedule>
+                <run><model>favicode_quadpayhideorders/observer::cancelPendingOrders</model></run>
+            </quadpay_cancel_orders>
+        </jobs>
+    </crontab>
+    -->
+
+</config>
